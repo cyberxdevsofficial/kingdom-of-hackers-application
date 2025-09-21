@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KINGDOM OF HACKERS TM REGISTRATION APPLICATION</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="matrix"></div>
+
+  <main class="container" aria-live="polite">
+    <header class="hero">
+      <h1>KINGDOM OF HACKERS<span class="tm">™</span></h1>
+      <p class="subtitle">REGISTRATION APPLICATION</p>
+    </header>
+
+    <form id="regForm" class="form" autocomplete="on" novalidate>
+      <div class="row">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" required />
+      </div>
+
+      <div class="row">
+        <label for="country">Your Country</label>
+        <input id="country" name="country" required />
+      </div>
+
+      <div class="row small">
+        <div class="col">
+          <label for="age">Your Age</label>
+          <input id="age" name="age" type="number" min="1" max="150" required />
+        </div>
+        <div class="col">
+          <label for="qual">Your Qualifications</label>
+          <input id="qual" name="qualification" required />
+        </div>
+      </div>
+
+      <div class="row small">
+        <div class="col">
+          <label for="whatsapp">Your WhatsApp number</label>
+          <input id="whatsapp" name="whatsapp" inputmode="tel" placeholder="+94..." required />
+        </div>
+        <div class="col">
+          <label for="phone">Your Number</label>
+          <input id="phone" name="phone" inputmode="tel" placeholder="+94..." required />
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+
+      <div class="row">
+        <label for="address">Your home address</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+      </div>
+
+      <div class="actions">
+        <button id="submitBtn" type="submit" class="btn">Send Application (Open Gmail)</button>
+        <button id="copyBtn" type="button" class="btn alt">Copy Application Text</button>
+      </div>
+
+      <p id="note" class="note">
+        The form will open Gmail (if you are signed in) with the message ready. If Gmail doesn't open, a fallback mailto will be used.
+      </p>
+
+      <div id="status" role="status" class="status" aria-live="polite"></div>
+    </form>
+
+    <footer class="footer">© 2023-2025 POWERED BY ANUGA SENITHU</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
